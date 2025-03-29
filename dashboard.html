@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>🔑 Admin Dashboard</h1>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="logout.html">🚪 Logout</a>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <h2>📌 Reported Items</h2>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchInput" placeholder="🔍 Search by name, location, etc..." onkeyup="searchItems()">
+
+        <!-- Items Table -->
+        <table id="itemsTable">
+            <thead>
+                <tr>
+                    <th>📋 ID</th>
+                    <th>🔍 Name</th>
+                    <th>📅 Date Found</th>
+                    <th>📍 Location</th>
+                    <th>📞 Contact</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Items will be dynamically populated -->
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<script src="./js/dashboard.js"></script>
+
+</body>
+</html>

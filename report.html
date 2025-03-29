@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Lost Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📌 Report Lost Item</h1>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="view.html">👁️ View Items</a>
+    </nav>
+</header>
+
+<main>
+    <form id="report-form">
+        <label>Item Name:</label>
+        <input type="text" id="item-name" required>
+
+        <label>Description:</label>
+        <textarea id="description" required></textarea>
+
+        <label>Date Lost:</label>
+        <input type="date" id="date-lost" required>
+
+        <label>Location Lost:</label>
+        <input type="text" id="location-lost" required>
+
+        <label>Contact Details:</label>
+        <input type="email / tel " id="contact" placeholder="Email or Phone" required>
+
+
+        <label>Upload Image:</label>
+        <input type="file" id="image">
+
+        <button type="submit">✅ Submit</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Lost and Found Portal. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+/* ----- General Styling ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #d0e1fd, #a9d6ff);  /* Light blue gradient */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----- Header Styling ----- */
+header {
+    background: #a9d6ff;   /* Light sky blue */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #4682b4;  /* Steel blue */
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3; /* Deep blue hover effect */
+}
+
+/* ----- Main Content Styling ----- */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* ----- Form Styling ----- */
+form {
+    background: #f0f8ff;  /* Alice blue form background */
+    color: #333;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #add8e6;  /* Light blue border */
+    border-radius: 8px;
+    font-size: 14px;
+    background: #fff;
+    color: #333;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border: 1px solid #4682b4;  /* Steel blue border on focus */
+    box-shadow: 0 0 10px rgba(70, 130, 180, 0.5);
+    outline: none;
+}
+
+/* ----- Button Styling ----- */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #87CEFA;  /* Light sky blue button */
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #4682b4;  /* Steel blue on hover */
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ----- Footer Styling ----- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #a9d6ff;
+    color: #333;
+    font-size: 14px;
+}
+
+/* ----- Responsive Design ----- */
+@media (max-width: 768px) {
+    form {
+        padding: 30px;
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
+

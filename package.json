@@ -1,0 +1,19 @@
+{
+  "name": "lost-and-found",
+  "version": "^1.0.0",
+  "description": "Lost and Found Website with MongoDB",
+  "main": "server.js",
+  "scripts": {
+      "start": "node server.js",
+      "dev": "nodemon server.js"
+  },
+  "dependencies": {
+      "express": "^4.21.2",
+      "mongoose": "^8.13.1",
+      "dotenv": "^16.4.7",
+      "body-parser": "^2.2.0",
+      "cors": "^2.8.5"
+  }
+}
+
+  
